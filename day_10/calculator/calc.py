@@ -45,7 +45,7 @@ def calculator():
                     keep_running = True
                 else:
                     keep_running = False
-            elif input("Press 'y' to start a fresh calculation or 'n' to exit: ").lower == 'n':
+            elif input("Press 'y' to start a fresh calculation or 'n' to exit: ").lower() == 'n':
                 keep_running = False
                 print(f'{num1} {operation} {num2} = {result}')
         else:
