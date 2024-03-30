@@ -8,7 +8,7 @@ def game():
             return 9
         else:
             return 4
-        
+            
     def start_again(new_game):
         if new_game.lower() == 'y':
             return True
@@ -17,18 +17,18 @@ def game():
             GAME_OVER = True
             return False
         
-    def get_random():
-        return randint(1,100)
-        
     level_input = input('choose your level "easy" or "hard" :').lower()
-    
+
     if level_input == 'easy' or level_input == 'hard':
         pass
     else:
         level_input = input('your answer does not match "easy" or "hard" please choose again :')
-
     lives = set_level(level_input)
+
     guess = int(input(f'Guess a number between 1 and 100 :'))
+    def get_random():
+        return randint(1,100)
+    
     number = get_random()
     GAME_OVER = False
 
